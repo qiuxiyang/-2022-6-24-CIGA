@@ -250,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseTarget: 0
   targetObject: {fileID: 0}
-  rotateSpeed: 1000
+  angle: 90
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

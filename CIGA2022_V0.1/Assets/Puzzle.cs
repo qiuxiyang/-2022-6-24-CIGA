@@ -11,7 +11,7 @@ public class Puzzle : MonoBehaviour
     public bool isOnEdge;
     public Vector3 gap;
 
-    private void Awake()
+    private  void Awake()
     {
         miM = FindObjectOfType<MouseInteractionManager>();
     }
@@ -97,4 +97,7 @@ public class Puzzle : MonoBehaviour
             }
         }
     }
+
+
+
 }
