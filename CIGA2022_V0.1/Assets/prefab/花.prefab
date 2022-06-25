@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3778900662587135342
+--- !u!1 &1777968686963377116
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3778900662587135343}
-  - component: {fileID: 3778900662587135376}
+  - component: {fileID: 1777968686963377119}
+  - component: {fileID: 1777968686963377118}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3778900662587135343
+--- !u!4 &1777968686963377119
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3778900662587135342}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_GameObject: {fileID: 1777968686963377116}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3778900663335595047}
+  m_Father: {fileID: 1777968687699982246}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3778900662587135376
+--- !u!212 &1777968686963377118
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3778900662587135342}
+  m_GameObject: {fileID: 1777968686963377116}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -70,23 +70,19 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-<<<<<<<< HEAD:CIGA2022_V0.1/Assets/prefab/PuzzlePrefab_Pigeon.prefab
-  m_Sprite: {fileID: 21300000, guid: 6c91c5d58d61c1f4dbc717964e2ed630, type: 3}
-========
-  m_Sprite: {fileID: 21300000, guid: 9e90022204d183349af34491cd1f6824, type: 3}
->>>>>>>> 7c5a490acefc1885cc7e2e563b003e6584db2a67:CIGA2022_V0.1/Assets/prefab/鸟.prefab
+  m_SortingOrder: 11
+  m_Sprite: {fileID: 21300000, guid: 6255f5ad9e4cb4242a3baf7fd9e80a7e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.8, y: 1.8}
+  m_Size: {x: 2.5, y: 1.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &3778900663335595043
+--- !u!1 &1777968687699982247
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,43 +90,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3778900663335595047}
-  - component: {fileID: 3778900663335595046}
-  - component: {fileID: 3778900663335595045}
-  - component: {fileID: 3778900663335595044}
+  - component: {fileID: 1777968687699982246}
+  - component: {fileID: 1777968687699982240}
+  - component: {fileID: 1777968687699982241}
+  - component: {fileID: 1777968687699982243}
   m_Layer: 0
-<<<<<<<< HEAD:CIGA2022_V0.1/Assets/prefab/PuzzlePrefab_Pigeon.prefab
-  m_Name: PuzzlePrefab_Pigeon
-========
-  m_Name: "\u9E1F"
->>>>>>>> 7c5a490acefc1885cc7e2e563b003e6584db2a67:CIGA2022_V0.1/Assets/prefab/鸟.prefab
+  m_Name: "\u82B1"
   m_TagString: Puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3778900663335595047
+--- !u!4 &1777968687699982246
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3778900663335595043}
+  m_GameObject: {fileID: 1777968687699982247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.8145123}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3778900662587135343}
+  - {fileID: 1777968686963377119}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3778900663335595046
+--- !u!114 &1777968687699982240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3778900663335595043}
+  m_GameObject: {fileID: 1777968687699982247}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6c3a3709b68aa942bc28d3aff21b455, type: 3}
@@ -142,13 +134,13 @@ MonoBehaviour:
   isOnBoard: 0
   isOnEdge: 0
   gap: {x: 0, y: 0, z: 0}
---- !u!60 &3778900663335595045
+--- !u!60 &1777968687699982241
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3778900663335595043}
+  m_GameObject: {fileID: 1777968687699982247}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -158,39 +150,29 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.32, y: 2.32}
-    newSize: {x: 1.8, y: 1.8}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-<<<<<<<< HEAD:CIGA2022_V0.1/Assets/prefab/PuzzlePrefab_Pigeon.prefab
-    - - {x: -1.16, y: 1.16}
-      - {x: -1.16, y: -1.16}
-      - {x: 1.16, y: -1.16}
-      - {x: 1.16, y: 0.04}
-      - {x: 0.12, y: 0.04}
-      - {x: 0.12, y: 1.16}
---- !u!50 &5791111980619092071
-========
-    - - {x: 0.06, y: 0.57654893}
-      - {x: -0.58, y: 0.58}
-      - {x: -0.58, y: -0.58}
-      - {x: 0.58, y: -0.58}
-      - {x: 0.58, y: 0.02}
-      - {x: 0.06, y: 0.02}
---- !u!50 &3778900663335595044
->>>>>>>> 7c5a490acefc1885cc7e2e563b003e6584db2a67:CIGA2022_V0.1/Assets/prefab/鸟.prefab
+    - - {x: 0.32, y: -0.94}
+      - {x: 0.32, y: 0.94}
+      - {x: -0.08, y: 0.94}
+      - {x: -0.08, y: -0.14}
+      - {x: -0.32, y: -0.14}
+      - {x: -0.32, y: -0.94}
+--- !u!50 &1777968687699982243
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3778900663335595043}
+  m_GameObject: {fileID: 1777968687699982247}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
