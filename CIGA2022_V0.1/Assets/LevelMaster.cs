@@ -19,6 +19,7 @@ public class LevelMaster : MonoBehaviour
         {
             level1.SetActive(false);
             level2.SetActive(true);
+            currentLevelIndex += 1;
             currentLevel = level2;
             currentPM = level2.GetComponentInChildren<PuzzleManager>();
         }
