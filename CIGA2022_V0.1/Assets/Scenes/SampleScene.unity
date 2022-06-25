@@ -867,7 +867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!68 &642341695
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2041,7 +2041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033ccad033e278e458bacd636d1fdc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePrefab: {fileID: 7438593423959466987, guid: 8917561e963f66144aa0ebfda24844b8, type: 3}
+  puzzlePrefab: {fileID: 5468404467114444335, guid: 4c4e53fbb0907db409472aee5aecac64, type: 3}
   isGrab: 0
   grabbingPuzzle: {fileID: 0}
   sprites:
