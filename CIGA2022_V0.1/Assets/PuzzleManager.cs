@@ -15,6 +15,9 @@ public class PuzzleManager : MonoBehaviour
     public int snakeAmount;
     public int takecoptAmount;
 
+    public int totoalAmount;
+    public bool isReady;
+
     public PuzzleSlot pokers;
     public PuzzleSlot gems;
     public PuzzleSlot rabbits;
@@ -71,6 +74,21 @@ public class PuzzleManager : MonoBehaviour
                 caneAmount += change;
                 canes.AdjustSlotSprites(caneAmount);
                 break;
+        }
+
+        GetTotalAmount();
+    }
+
+    public void GetTotalAmount()
+    {
+        totoalAmount = pokerAmount + gemAmount + rabbitAmount + pigeonAmount + roseAmount + caneAmount + knifeAmount + elephantAmount + snakeAmount + takecoptAmount;
+        if(totoalAmount == 0)
+        {
+            isReady = true;
+        }
+        else
+        {
+            isReady = false;
         }
     }
 }

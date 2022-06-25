@@ -54,6 +54,10 @@ public class Puzzle : MonoBehaviour
         if (isOnBoard && !isOnEdge && collidingPuzzles.Count == 0)
         {
             isSettled = true;
+            if (pM.isReady)
+            {
+                FindObjectOfType<LevelMaster>().nextLevelButton.SetActive(true);
+            }
         }
         else
         {

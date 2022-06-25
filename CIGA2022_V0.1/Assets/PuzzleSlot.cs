@@ -10,6 +10,12 @@ public class PuzzleSlot : MonoBehaviour
     public List<GameObject> sprites;
     public int currentAmount;
     public bool isRunOut;
+    public LevelMaster lvM;
+
+    private void Awake()
+    {
+        lvM = FindObjectOfType<LevelMaster>();
+    }
 
     private void OnMouseDown()
     {
@@ -17,6 +23,7 @@ public class PuzzleSlot : MonoBehaviour
         {
             Puzzle newPuzzle = Instantiate(puzzlePrefab);
             isGrab = true;
+            newPuzzle.transform.SetParent(lvM.currentLevel.transform);
             newPuzzle.gameObject.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * 10;
             grabbingPuzzle = newPuzzle;
             newPuzzle.pM.UpdateAmount(newPuzzle.type,-1);
