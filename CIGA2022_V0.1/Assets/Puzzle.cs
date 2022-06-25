@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PuzzleType {poker,gem };
+public enum PuzzleType {poker,gem,pigeon,rabbit,rose,cane,takecopt,elephant,snake};
 
 public class Puzzle : MonoBehaviour
 {
@@ -58,7 +58,7 @@ public class Puzzle : MonoBehaviour
         else
         {
             isSettled = false;
-            UpdateAmountChange(1);
+            pM.UpdateAmount(type,1);
         }
 
         isGrabbed = false;
@@ -151,17 +151,6 @@ public class Puzzle : MonoBehaviour
         if (collision.tag == "Board")
         {
             isInBoardLine = false;
-        }
-    }
-
-    public void UpdateAmountChange(int change)
-    {
-        switch (type)
-        {
-            case PuzzleType.poker:
-                pM.pokerAmount += change;
-                pM.UpdatePoker();
-                break;
         }
     }
 

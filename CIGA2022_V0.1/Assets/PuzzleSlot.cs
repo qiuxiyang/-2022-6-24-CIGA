@@ -19,7 +19,7 @@ public class PuzzleSlot : MonoBehaviour
             isGrab = true;
             newPuzzle.gameObject.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * 10;
             grabbingPuzzle = newPuzzle;
-            newPuzzle.UpdateAmountChange(-1);
+            newPuzzle.pM.UpdateAmount(newPuzzle.type,-1);
         }
 
     }
