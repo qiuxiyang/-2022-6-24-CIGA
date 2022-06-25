@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miM: {fileID: 0}
+  pM: {fileID: 0}
   isGrabbed: 0
   isSettled: 0
   isInBoardLine: 0
@@ -176,6 +177,7 @@ MonoBehaviour:
   isOnEdge: 0
   collidingPuzzles: []
   gap: {x: 0, y: 0, z: 0}
+  type: 3
 --- !u!50 &8762620432619485478
 Rigidbody2D:
   serializedVersion: 4

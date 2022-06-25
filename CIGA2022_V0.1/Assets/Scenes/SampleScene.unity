@@ -189,6 +189,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &167576279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 167576280}
+  - component: {fileID: 167576281}
+  m_Layer: 0
+  m_Name: DetectWindow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &167576280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167576279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.200529, y: 1.8521857, z: -8.852497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &167576281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167576279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e000664f594bcb14092afdb1b0eb628d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miM: {fileID: 0}
+  targetPuzzle: {fileID: 0}
+  isGrabbed: 0
+  isSettled: 0
+  isInBoardLine: 0
+  isOnBoard: 0
+  isOnEdge: 0
 --- !u!1 &286566688
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,11 +366,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033ccad033e278e458bacd636d1fdc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePrefab: {fileID: 1777968687699982240, guid: 69d59b434b3383c42a0a08071bf4179f, type: 3}
+  puzzlePrefab: {fileID: 8460816977518209156, guid: 3edf5fd9d97351743b1ec095a9f3d524, type: 3}
   isGrab: 0
   grabbingPuzzle: {fileID: 0}
-  sprites: []
-  currentAmount: 0
+  sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  currentAmount: 3
   isRunOut: 0
 --- !u!61 &308506316
 BoxCollider2D:
@@ -788,13 +840,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033ccad033e278e458bacd636d1fdc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePrefab: {fileID: 3626753715576109888, guid: 5042afe689fd2464abdfdf5943531755, type: 3}
+  puzzlePrefab: {fileID: 1729406898999859457, guid: 6075ee2d33373424eaab8b79b087653c, type: 3}
   isGrab: 0
   grabbingPuzzle: {fileID: 0}
   sprites:
   - {fileID: 0}
   - {fileID: 0}
-  currentAmount: 0
+  currentAmount: 3
   isRunOut: 0
 --- !u!1 &608552849
 GameObject:
@@ -884,11 +936,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 2.4, y: 5.2}
-  - {x: 2.4, y: 0.9}
-  - {x: -2.4, y: 0.9}
-  - {x: -2.4, y: 5.2}
-  - {x: 2.4, y: 5.2}
+  - {x: 2.2, y: 5.1}
+  - {x: 2.2, y: 1.1}
+  - {x: -2.2, y: 1.1}
+  - {x: -2.2, y: 5.1}
+  - {x: 2.2, y: 5.1}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -954,11 +1006,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033ccad033e278e458bacd636d1fdc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePrefab: {fileID: 3663038368685300622, guid: cb3454022e96cdf49bdf50b03ce69777, type: 3}
+  puzzlePrefab: {fileID: 8915575545845667293, guid: d4a42b5055a7a384caabf22670354d0c, type: 3}
   isGrab: 0
   grabbingPuzzle: {fileID: 0}
-  sprites: []
-  currentAmount: 0
+  sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentAmount: 3
   isRunOut: 0
 --- !u!61 &697362305
 BoxCollider2D:
@@ -1124,11 +1179,21 @@ MonoBehaviour:
   rabbitAmount: 0
   pigeonAmount: 0
   roseAmount: 0
+  caneAmount: 0
+  knifeAmount: 0
+  elephantAmount: 0
+  snakeAmount: 0
+  takecoptAmount: 0
   pokers: {fileID: 1512927334}
   gems: {fileID: 0}
   rabbits: {fileID: 0}
   pigeons: {fileID: 0}
   roses: {fileID: 0}
+  canes: {fileID: 0}
+  knives: {fileID: 0}
+  elephants: {fileID: 0}
+  snakes: {fileID: 0}
+  takecopts: {fileID: 0}
 --- !u!1 &909850754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,8 +1792,10 @@ MonoBehaviour:
   puzzlePrefab: {fileID: 1379190135013134166, guid: 0b0a593a16ffec94b8053e336144e1f6, type: 3}
   isGrab: 0
   grabbingPuzzle: {fileID: 0}
-  sprites: []
-  currentAmount: 0
+  sprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  currentAmount: 3
   isRunOut: 0
 --- !u!61 &1425221208
 BoxCollider2D:
@@ -2041,7 +2108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033ccad033e278e458bacd636d1fdc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePrefab: {fileID: 7949627534861643428, guid: 18bcd48c0d061d14889021e5f981d1f6, type: 3}
+  puzzlePrefab: {fileID: 1776541965711498792, guid: dbce664ce89645e4381704493d18db6f, type: 3}
   isGrab: 0
   grabbingPuzzle: {fileID: 0}
   sprites:

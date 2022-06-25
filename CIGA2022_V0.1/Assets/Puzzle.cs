@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PuzzleType {poker,gem,pigeon,rabbit,rose,cane,takecopt,elephant,snake};
+public enum PuzzleType {poker,gem,pigeon,rabbit,rose,cane,takecopt,elephant,snake,knife};
 
 public class Puzzle : MonoBehaviour
 {
