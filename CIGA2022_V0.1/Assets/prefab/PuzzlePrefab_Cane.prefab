@@ -129,11 +129,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miM: {fileID: 0}
+  pM: {fileID: 0}
   isGrabbed: 0
   isSettled: 0
+  isInBoardLine: 0
   isOnBoard: 0
   isOnEdge: 0
+  collidingPuzzles: []
   gap: {x: 0, y: 0, z: 0}
+  type: 5
 --- !u!60 &3039587554023721500
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -137,7 +137,7 @@ MonoBehaviour:
   isOnEdge: 0
   collidingPuzzles: []
   gap: {x: 0, y: 0, z: 0}
-  type: 0
+  type: 6
 --- !u!60 &2790737421551227942
 PolygonCollider2D:
   m_ObjectHideFlags: 0
