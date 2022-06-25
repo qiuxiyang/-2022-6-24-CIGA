@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033ccad033e278e458bacd636d1fdc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePrefab: {fileID: 8186932086930988591, guid: 6ac3c27200cf0434ba6ed73cad955df9, type: 3}
+  puzzlePrefab: {fileID: 1777968687699982240, guid: 69d59b434b3383c42a0a08071bf4179f, type: 3}
   isGrab: 0
   grabbingPuzzle: {fileID: 0}
   sprites: []
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033ccad033e278e458bacd636d1fdc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePrefab: {fileID: 309881395618710941, guid: cbffc7843777dfd47a562756ce0751af, type: 3}
+  puzzlePrefab: {fileID: 3626753715576109888, guid: 5042afe689fd2464abdfdf5943531755, type: 3}
   isGrab: 0
   grabbingPuzzle: {fileID: 0}
   sprites:
@@ -867,7 +867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!68 &642341695
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -954,7 +954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033ccad033e278e458bacd636d1fdc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePrefab: {fileID: 5791111980619092069, guid: 6e12786753a84344f9d080192dcbf204, type: 3}
+  puzzlePrefab: {fileID: 3663038368685300622, guid: cb3454022e96cdf49bdf50b03ce69777, type: 3}
   isGrab: 0
   grabbingPuzzle: {fileID: 0}
   sprites: []
@@ -2041,7 +2041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033ccad033e278e458bacd636d1fdc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePrefab: {fileID: 5468404467114444335, guid: 4c4e53fbb0907db409472aee5aecac64, type: 3}
+  puzzlePrefab: {fileID: 7949627534861643428, guid: 18bcd48c0d061d14889021e5f981d1f6, type: 3}
   isGrab: 0
   grabbingPuzzle: {fileID: 0}
   sprites:
