@@ -3272,11 +3272,35 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 2.2, y: 5.1}
-  - {x: 2.2, y: 1.1}
-  - {x: -2.2, y: 1.1}
-  - {x: -2.2, y: 5.1}
-  - {x: 2.2, y: 5.1}
+  - {x: 2.56, y: 3.6}
+  - {x: 2.56, y: 2.88}
+  - {x: 1.6, y: 2.88}
+  - {x: 1.6, y: 2.28}
+  - {x: 1.04, y: 2.28}
+  - {x: 1.04, y: 1.8}
+  - {x: 0.36, y: 1.8}
+  - {x: 0.36, y: -0.12}
+  - {x: 0.8, y: -0.12}
+  - {x: 0.8, y: -0.32}
+  - {x: 1.52, y: -0.32}
+  - {x: 1.52, y: -1.88}
+  - {x: 0.68, y: -1.88}
+  - {x: 0.68, y: -1.04}
+  - {x: -0.6, y: -1.04}
+  - {x: -0.6, y: -1.88}
+  - {x: -1.44, y: -1.88}
+  - {x: -1.44, y: -0.32}
+  - {x: -0.72, y: -0.32}
+  - {x: -0.72, y: -0.12}
+  - {x: -0.28, y: -0.12}
+  - {x: -0.28, y: 1.8}
+  - {x: -0.96, y: 1.8}
+  - {x: -0.96, y: 2.28}
+  - {x: -1.52, y: 2.28}
+  - {x: -1.52, y: 2.88}
+  - {x: -2.76, y: 2.88}
+  - {x: -2.76, y: 3.6}
+  - {x: 2.76, y: 3.6}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -3413,7 +3437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1249491827
 Transform:
   m_ObjectHideFlags: 0
@@ -4694,7 +4718,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1638692331
 Transform:
   m_ObjectHideFlags: 0
