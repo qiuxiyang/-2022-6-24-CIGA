@@ -8,6 +8,7 @@ public class Puzzle : MonoBehaviour
 {
     public MouseInteractionManager miM;
     public PuzzleManager pM;
+    public AudioMaster aM;
     public bool isGrabbed;
     public bool isSettled;
     public bool isInBoardLine;
@@ -27,6 +28,7 @@ public class Puzzle : MonoBehaviour
     {
         miM = FindObjectOfType<MouseInteractionManager>();
         pM = FindObjectOfType<PuzzleManager>();
+        aM = FindObjectOfType<AudioMaster>();
         collidingPuzzles = new List<GameObject>();
     }
 
@@ -53,15 +55,18 @@ public class Puzzle : MonoBehaviour
     {
         if (isOnBoard && !isOnEdge && collidingPuzzles.Count == 0)
         {
+            aM.settleAudio.Play();
             isSettled = true;
             if (pM.isReady)
             {
+                aM.nextLvAudio.Play();
                 FindObjectOfType<LevelMaster>().nextLevelButton.SetActive(true);
             }
         }
         else
         {
             isSettled = false;
+            aM.cancelAudio.Play();
             pM.UpdateAmount(type,1);
         }
 

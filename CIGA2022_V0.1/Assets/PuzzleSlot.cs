@@ -27,6 +27,7 @@ public class PuzzleSlot : MonoBehaviour
             newPuzzle.gameObject.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + Vector3.forward * 10;
             grabbingPuzzle = newPuzzle;
             newPuzzle.pM.UpdateAmount(newPuzzle.type,-1);
+            newPuzzle.aM.chooseAudio.Play();
         }
 
     }

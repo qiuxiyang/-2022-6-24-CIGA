@@ -11,6 +11,7 @@ public class Detector : MonoBehaviour
     public bool isInBoardLine;
     public bool isOnBoard;
     public bool isOnEdge;
+    public List<GameObject> colliders;
 
     private void Awake()
     {
@@ -33,6 +34,7 @@ public class Detector : MonoBehaviour
             isInBoardLine = targetPuzzle.isInBoardLine;
             isOnBoard = targetPuzzle.isOnBoard;
             isOnEdge = targetPuzzle.isOnEdge;
+            colliders = targetPuzzle.collidingPuzzles;
         }
     }
 

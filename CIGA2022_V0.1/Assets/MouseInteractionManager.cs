@@ -43,6 +43,7 @@ public class MouseInteractionManager : MonoBehaviour
             if (targetObject != null && targetObject.TryGetComponent(out Puzzle puzzle))
             {
                 //targetObject.transform.Rotate(Vector3.forward * angle);
+                targetObject.GetComponent<Puzzle>().aM.rotateAudio.Play();
                 targetObject.transform.RotateAround(transform.position, Vector3.forward, 90);
             }
         }
