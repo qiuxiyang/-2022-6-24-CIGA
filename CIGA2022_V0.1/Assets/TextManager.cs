@@ -12,9 +12,11 @@ public class TextManager : MonoBehaviour
     public GameObject confirmButton;
     public GameObject talkPanel;
     public AudioMaster aM;
+    public LevelMaster lvM;
 
-    private void Start()
+    private void Awake()
     {
+        lvM = FindObjectOfType<LevelMaster>();
     }
     public IEnumerator StartPlayText()
     {
@@ -39,6 +41,7 @@ public class TextManager : MonoBehaviour
         if(index == introTextList.Count)
         {
             talkPanel.SetActive(false);
+            lvM.isReady = true;
         }
         else
         {

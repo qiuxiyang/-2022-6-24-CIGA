@@ -10,6 +10,7 @@ public class LevelMaster : MonoBehaviour
 
     public bool isReady;
     public GameObject title;
+    public GameObject end;
     public TextManager tM;
     public GameObject level1;
     public GameObject level2;
@@ -22,6 +23,8 @@ public class LevelMaster : MonoBehaviour
 
     public GameObject nextLevelButton;
     public GameObject startButton;
+    public GameObject quitButton;
+    public GameObject leaveButton;
 
     public GameObject currentLevel;
     public PuzzleManager currentPM;
@@ -34,11 +37,10 @@ public class LevelMaster : MonoBehaviour
     {
         aM.startAudio.Play();
 
-        if(currentLevelIndex == 1)
+        if(currentLevelIndex == 2)
         {
             level1.SetActive(false);
             level2.SetActive(true);
-            currentLevelIndex += 1;
             currentLevel = level2;
             currentPM = level2.GetComponentInChildren<PuzzleManager>();
         }
@@ -48,7 +50,6 @@ public class LevelMaster : MonoBehaviour
             level3.SetActive(true);
             currentLevel = level3;
             currentPM = level3.GetComponentInChildren<PuzzleManager>();
-
         }
             
         nextLevelButton.SetActive(false);
@@ -58,6 +59,12 @@ public class LevelMaster : MonoBehaviour
     {
         aM.startAudio.Play();
         isTitleUp = true;
+    }
+
+    public void OnClickQuit()
+    {
+        aM.startAudio.Play();
+        Application.Quit();
     }
 
     void Update()

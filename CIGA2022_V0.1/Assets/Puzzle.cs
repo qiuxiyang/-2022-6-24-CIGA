@@ -7,6 +7,7 @@ public enum PuzzleType {poker,gem,pigeon,rabbit,rose,cane,takecopt,elephant,snak
 public class Puzzle : MonoBehaviour
 {
     public MouseInteractionManager miM;
+    public LevelMaster lvM;
     public PuzzleManager pM;
     public AudioMaster aM;
     public bool isGrabbed;
@@ -29,6 +30,7 @@ public class Puzzle : MonoBehaviour
         miM = FindObjectOfType<MouseInteractionManager>();
         pM = FindObjectOfType<PuzzleManager>();
         aM = FindObjectOfType<AudioMaster>();
+        lvM = FindObjectOfType<LevelMaster>();
         collidingPuzzles = new List<GameObject>();
     }
 
@@ -60,7 +62,18 @@ public class Puzzle : MonoBehaviour
             if (pM.isReady)
             {
                 aM.nextLvAudio.Play();
-                FindObjectOfType<LevelMaster>().nextLevelButton.SetActive(true);
+                lvM.currentLevelIndex += 1;
+
+                if (lvM.currentLevelIndex == 4)
+                {
+                    lvM.end.SetActive(true);
+                    lvM.leaveButton.SetActive(false);
+                    lvM.quitButton.SetActive(true);
+                }
+                else
+                {
+                    lvM.nextLevelButton.SetActive(true);
+                }
             }
         }
         else

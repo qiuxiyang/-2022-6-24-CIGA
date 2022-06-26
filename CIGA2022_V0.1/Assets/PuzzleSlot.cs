@@ -19,7 +19,7 @@ public class PuzzleSlot : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!isRunOut)
+        if (!isRunOut && lvM.isReady)
         {
             Puzzle newPuzzle = Instantiate(puzzlePrefab);
             isGrab = true;
